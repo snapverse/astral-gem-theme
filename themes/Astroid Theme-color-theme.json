@@ -1,0 +1,247 @@
+{
+	"$schema": "vscode://schemas/color-theme",
+	"type": "dark",
+	"name": "Astroid Theme",
+	"colors": {
+		"focusBorder": "#40627C",
+		"foreground": "#bcb28d",
+		"selection.background": "#58b2dc",
+		"descriptionForeground": "#bcb28d",
+		"errorForeground": "#E03C8A",
+		"terminal.ansiBlue": "#58b2dc",
+		"terminal.ansiBrightBlue": "#58b2dc",
+		"terminal.ansiRed": "#E03C8A",
+		"terminal.ansiBrightRed": "#e6844f",
+		"terminal.ansiYellow": "#e6844f",
+		"terminal.ansiBrightYellow": "#657b83",
+		"terminal.ansiGreen": "#24936e",
+		"terminal.ansiBrightGreen": "#5c8490",
+		"terminal.ansiWhite": "#eee8d5",
+		"terminal.ansiBrightWhite": "#fdf6e3",
+		"terminal.ansiCyan": "#69b0ac",
+		"terminal.ansiBrightCyan": "#93a1a1",
+		"terminal.ansiBlack": "#2c5a65",
+		"terminal.ansiBrightBlack": "#666666",
+		"terminal.ansiMagenta": "#e03c8a",
+		"terminal.ansiBrightMagenta": "#646695",
+		"terminal.foreground": "#bcb28d",
+		"terminal.background": "#1f2023",
+		"terminalCursor.background": "#eee8d5",
+		"terminalCursor.foreground": "#657b83",
+		"editor.background": "#1f2023",
+		"editor.foreground": "#bcb28d",
+		"editor.selectionBackground": "#ED4C7630",
+		"editor.selectionHighlightBackground": "#2c5a65",
+		"editor.wordHighlightBackground": "#2c5a65",
+		"editorCursor.foreground": "#bcb28d",
+		"editorGutter.background": "#1f2023",
+		"editorHoverWidget.background": "#121620",
+		"editorIndentGuide.background": "#2f3033",
+		"editorLineNumber.foreground": "#666",
+		"editorLink.activeForeground": "#999",
+		"editor.lineHighlightBackground": "#5252522A",
+		"editor.lineHighlightBorder": "#5252522A",
+		"editorWarning.foreground": "#E9BB5E",
+		"editorError.foreground": "#ED4C76",
+		"editor.findMatchHighlightBackground": "#2c5a65",
+		"editor.findRangeHighlightBackground": "#2c5a65",
+		"editor.findMatchBorder": "#bcb28d66",
+		"sideBar.background": "#1f2023",
+		"sideBar.border": "#424852",
+		"sideBar.foreground": "#bcb28d",
+		"sideBarSectionHeader.background": "#1f2023",
+		"sideBarSectionHeader.foreground": "#999",
+		"sideBarTitle.foreground": "#999",
+		"statusBar.background": "#1f2023",
+		"statusBar.border": "#424852",
+		"statusBar.foreground": "#bcb28d",
+		"statusBar.debuggingBackground": "#bcb28d",
+		"statusBar.debuggingForeground": "#1f2023",
+		"statusBar.noFolderBackground": "#1f2023",
+		"statusBar.noFolderForeground": "#bcb28d",
+		"tab.activeBackground": "#1f2023",
+		"tab.activeForeground": "#bcb28d",
+		"tab.inactiveBackground": "#212121",
+		"tab.activeBorder": "#FF668E",
+		"tab.inactiveForeground": "#bcb28d66",
+		"panel.background": "#1f2023",
+		"activityBar.background": "#1f2023",
+		"activityBar.border": "#424852",
+		"activityBar.foreground": "#bcb28d",
+		"activityBarBadge.background": "#424852",
+		"titleBar.activeBackground": "#1f2023",
+		"titleBar.activeForeground": "#bcb28d",
+		"titleBar.inactiveBackground": "#1f2023",
+		"titleBar.inactiveForeground": "#bcb28d"
+	},
+	"tokenColors": [
+		{
+			"name": "Comment",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment",
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#6B6B6B"
+			}
+		},
+		{
+			"name": "Type Symbols",
+			"scope": [
+				"punctuation.definition.typeparameters.end",
+				"punctuation.definition.typeparameters.begin",
+				"keyword.operator.type"
+			],
+			"settings": {
+				"foreground": "#CCCCCC"
+			}
+		},
+		{
+			"name": "Types, Classes, Inheritance, CSS attrs",
+			"scope": [
+				"support.type.primitive",
+				"entity.name.type",
+				"entity.name.type.alias",
+				"entity.name.type.instance",
+				"entity.other.inherited-class",
+				"support.class",
+				"support.type.object.module",
+				"entity.other.attribute-name.id.css",
+				"entity.other.attribute-name.class.css",
+				"keyword.other.type.php"
+			],
+			"settings": {
+				"foreground": "#4EC9B0"
+			}
+		},
+		{
+			"name": "Keyword control",
+			"scope": [
+				"keyword.control"
+			],
+			"settings": {
+				"foreground": "#C586C0"
+			}
+		},
+		{
+			"name": "Functions, Variable keywords",
+			"scope": [
+				"constant.language.boolean",
+				"storage.type.function",
+				"storage.modifier",
+				"storage.type.type",
+				"storage.type",
+				"constant.language",
+				"entity.name.tag",
+				"variable.language.super",
+				"keyword.other.use.php",
+				"keyword.other.phpdoc.php",
+				"keyword.blade"
+			],
+			"settings": {
+				"foreground": "#569CD6",
+			}
+		},
+		{
+			"name": "Function names",
+			"scope": [
+				"entity.name.function",
+				"punctuation.decorator",
+				"variable.other.object.property",
+				"variable.other.property",
+				"constant.numeric"
+			],
+			"settings": {
+				"foreground": "#C4BDEB"
+			}
+		},
+		{
+			"name": "Strings, Logical and maths operators",
+			"scope": [
+				"string",
+				"keyword.operator.arithmetic",
+				"keyword.operator.logical.ts",
+				"support.constant.property-value.css",
+				"support.constant.font-name.css"
+			],
+			"settings": {
+				"foreground": "#FF668E"
+			}
+		},
+		{
+			"name": "Strings, Logical and maths operators",
+			"scope": "string.regexp",
+			"settings": {
+				"foreground": "#D95073"
+			}
+		},
+		{
+			"name": "this",
+			"scope": "variable.language.this",
+			"settings": {
+				"foreground": "#FF668E",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Variables",
+			"scope": [
+				"meta.import",
+				"variable.other.object",
+				"variable.other.readwrite",
+				"variable.parameter",
+				"meta.definition.variable",
+				"support.type.property-name",
+				"meta.object-literal.key",
+				"variable.object.property.ts",
+				"meta.function-call",
+				"variable.other.constant.object",
+				"variable.other.enummember",
+				"support.type.property-name.css",
+				"variable.other.php",
+				"text"
+			],
+			"settings": {
+				"foreground": "#D4CEBB"
+			}
+		},
+		{
+			"name": "Assignment operators and numbers",
+			"scope": [
+				"keyword.operator.assignment",
+				"keyword.other.unit.percentage.css",
+			],
+			"settings": {
+				"foreground": "#CBE5E0"
+			}
+		},
+		{
+			"name": "Tag attrs",
+			"scope": [
+				"entity.other.attribute-name",
+				"variable.other.constant",
+				"keyword.operator.new",
+				"support.other.namespace.php"
+			],
+			"settings": {
+				"foreground": "#D4D1C2"
+			}
+		},
+		{
+			"name": "Tag symbols </>",
+			"scope": [
+				"punctuation.definition.tag",
+				"keyword.operator.class.php",
+				"punctuation.terminator.statement",
+				"punctuation.terminator.expression",
+				"punctuation.separator",
+				"punctuation.section.embedded.begin.php",
+				"punctuation.section.embedded.end.php"
+			],
+			"settings": {
+				"foreground": "#939393"
+			}
+		}
+	]
+}
