@@ -1,0 +1,51 @@
+@mixin displayproperty {
+    display: flex;
+    //other property for commen to many classes:
+  }
+  //for light and dark theme:
+  @mixin theme-color($light_color: true) {
+    @if $light_color {
+      background-color: #fff;
+      color: black;
+    } @else {
+      background-color: black;
+      color: #fff;
+    }
+  }
+  $margin: 100px;
+  
+  .paginator-wrapper {
+    @include displayproperty();
+    justify-content: end;
+    margin-top: 2.5px;
+    .page-no {
+      margin-left: $margin - 90px;
+      margin-right: $margin - 60px;
+      // &:hover {
+      //   color: red;
+      // }
+      //this is nesting in nesting:
+    }
+  }
+  
+  .spinner {
+    margin: 20px 0;
+    margin-bottom: $margin - 80px;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .empty-data {
+    @include displayproperty();
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  .main-wrapper {
+    .light {
+      @include theme-color($light_color: true);
+    }
+    .dark {
+      @include theme-color($light_color: false);
+    }
+  }
