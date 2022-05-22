@@ -1,0 +1,38 @@
+{
+    "name": "vscode-astroid-dark-theme",
+    "displayName": "astroid",
+    "description": "Astroid is a vscode theme that improve the dark+ theme of vscode",
+    "version": "1.0.1",
+    "publisher": "simmxns",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/simmxns/astroid"
+    },
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Themes",
+        "dark+",
+        "vsode default theme",
+        "improved theme",
+        "dark theme"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Astroid Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Astroid Theme-color-theme.json"
+            }
+        ]
+    },
+    "scripts": {
+        "publish": "npx vsce publish",
+        "package": "npx vsce package",
+        "build": "tsc src/build.ts && node dist/build.js",
+        "fix": "npm run pretty && npm run lint",
+        "pretty": "npx prettier -w .",
+        "lint": "npx eslint . --ext .js,.ts"
+    }
+}
