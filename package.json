@@ -1,7 +1,8 @@
 {
     "name": "vscode-astroid-dark-theme",
-    "displayName": "astroid",
-    "description": "Astroid is a vscode theme that improve the dark+ theme of vscode",
+    "icon": "./assets/logo.png",
+    "displayName": "Astroid Theme",
+    "description": "Astroid is a vscode theme that improves vscode's dark+ theme considerably",
     "version": "1.1.1",
     "publisher": "simmxns",
     "repository": {
