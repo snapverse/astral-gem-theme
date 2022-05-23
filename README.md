@@ -17,6 +17,6 @@ _soon..._
 </div>
 
 ## Contributing
-[Pull requests] are welcome! 🤠
+[Pull requests](https://github.com/simmxns/astroid/pulls) are welcome! 🤠
 
 **Enjoy it!**
