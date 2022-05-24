@@ -3,7 +3,7 @@
 
 ## Preview
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/62354548/169928946-68992dd9-6379-4d2b-bc0d-7b80d19bb2ee.png" />
+  <img src="https://user-images.githubusercontent.com/62354548/169932516-3a0aa6f5-057b-4456-a2cc-2017a63cd2b0.png" />
   <i>Typescript syntax hightlighting preview</i>
 </div>
 
