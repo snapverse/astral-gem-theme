@@ -3,7 +3,7 @@
 
 ## Preview
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/62354548/169831689-f666e6f9-98f8-421a-b690-97ce20f81c43.png" />
+  <img src="https://user-images.githubusercontent.com/62354548/169928946-68992dd9-6379-4d2b-bc0d-7b80d19bb2ee.png" />
   <i>Typescript syntax hightlighting preview</i>
 </div>
 
@@ -12,11 +12,11 @@ The dark+ theme of vscode is really good, I've used it throughout my programming
 
 ## Pallete 🎨
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/62354548/169827244-ff3c0c2f-966e-4214-8e3c-b7ab3e471daf.png" />
+  <img src="https://user-images.githubusercontent.com/62354548/169931198-8138f913-5f18-4548-b60b-6f60d308327f.png" />
   <i>Color pallete used for the syntax hihglighting</i>
 </div>
 
 ## Contributing
 [Pull requests](https://github.com/simmxns/astroid/pulls) are welcome! 🤠
 
-**Enjoy it!**
+**I hope you enjoy it!**
