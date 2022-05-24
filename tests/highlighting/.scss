@@ -21,9 +21,9 @@
     .page-no {
       margin-left: $margin - 90px;
       margin-right: $margin - 60px;
-      // &:hover {
-      //   color: red;
-      // }
+      &:hover {
+        color: red;
+      }
       //this is nesting in nesting:
     }
   }

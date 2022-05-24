@@ -13,6 +13,9 @@
       <title>DemoLaravel - @yield('title')</title>
    </head>
    <body>
+      @if ({{ Session::get($atribute) }})
+          
+      @endif
       @yield('content')
    </body>
 </html>

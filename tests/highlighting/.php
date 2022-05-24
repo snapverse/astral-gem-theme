@@ -9,6 +9,8 @@ class CreateTasksTable extends Migration
      * Run the migrations.
      *
      * @return void
+     * @param integer $id
+     * @route `GET /posts/{id?}`
      */
     public function up()
     {

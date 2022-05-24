@@ -64,8 +64,9 @@ function f() {
 
 class Sample {
   @f()
-  protected method () {}
+  protected method () {
 
+  }
 }
 
 abstract class GreeterSkeleton implements Greet {
