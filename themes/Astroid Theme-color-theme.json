@@ -42,13 +42,14 @@
 		"editor.lineHighlightBackground": "#5252522A",
 		"editor.lineHighlightBorder": "#5252522A",
 		"editorWarning.foreground": "#E9BB5E",
+		"list.warningForeground": "#E9BB5E",
 		"editorError.foreground": "#ED4C76",
+		"list.errorForeground": "#ED4C76",
 		"editor.findMatchHighlightBackground": "#2c5a65",
 		"editor.findRangeHighlightBackground": "#2c5a65",
 		"editor.findMatchBorder": "#bcb28d66",
 		"sideBar.background": "#1f2023",
-		"sideBar.border": "#424852",
-		"sideBar.foreground": "#bcb28d",
+		"sideBar.foreground": "#D4CEBB",
 		"sideBarSectionHeader.background": "#1f2023",
 		"sideBarSectionHeader.foreground": "#999",
 		"sideBarTitle.foreground": "#999",
@@ -60,9 +61,9 @@
 		"statusBar.noFolderBackground": "#1f2023",
 		"statusBar.noFolderForeground": "#bcb28d",
 		"tab.activeBackground": "#1f2023",
-		"tab.activeForeground": "#bcb28d",
+		"tab.activeForeground": "#D4CEBB",
 		"tab.inactiveBackground": "#212121",
-		"tab.activeBorder": "#FF668E",
+		"tab.activeBorderTop": "#FF668E",
 		"tab.inactiveForeground": "#bcb28d66",
 		"panel.background": "#1f2023",
 		"activityBar.background": "#1f2023",
@@ -70,9 +71,15 @@
 		"activityBar.foreground": "#bcb28d",
 		"activityBarBadge.background": "#424852",
 		"titleBar.activeBackground": "#1f2023",
-		"titleBar.activeForeground": "#bcb28d",
+		"titleBar.activeForeground": "#1f2023",
 		"titleBar.inactiveBackground": "#1f2023",
-		"titleBar.inactiveForeground": "#bcb28d"
+		"titleBar.inactiveForeground": "#1f2023",
+		"gitDecoration.addedResourceForeground": "#4EC9B0",
+		"editorGutter.addedBackground": "#4EC9B0",
+		"gitDecoration.modifiedResourceForeground": "#b18ed5",
+		"editorGutter.modifiedBackground": "#b18ed5",
+		"gitDecoration.deletedResourceForeground": "#ED4C76",
+		"editorGutter.deletedBackground": "#ED4C76"
 	},
 	"tokenColors": [
 		{
@@ -80,21 +87,12 @@
 			"scope": [
 				"comment",
 				"punctuation.definition.comment",
+				"punctuation.section.embedded.begin.php",
+				"punctuation.section.embedded.end.php",
+				"punctuation.definition.tag"
 			],
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#6B6B6B"
-			}
-		},
-		{
-			"name": "Type Symbols",
-			"scope": [
-				"punctuation.definition.typeparameters.end",
-				"punctuation.definition.typeparameters.begin",
-				"keyword.operator.type"
-			],
-			"settings": {
-				"foreground": "#CCCCCC"
 			}
 		},
 		{
@@ -109,7 +107,8 @@
 				"support.type.object.module",
 				"entity.other.attribute-name.id.css",
 				"entity.other.attribute-name.class.css",
-				"keyword.other.type.php"
+				"keyword.other.type.php",
+				"entity.name.class"
 			],
 			"settings": {
 				"foreground": "#4EC9B0"
@@ -121,7 +120,7 @@
 				"keyword.control"
 			],
 			"settings": {
-				"foreground": "#C586C0"
+				"foreground": "#b18ed5"
 			}
 		},
 		{
@@ -137,6 +136,9 @@
 				"variable.language.super",
 				"keyword.other.use.php",
 				"keyword.other.phpdoc.php",
+				"punctuation.definition.block.tag",
+				"meta.at-rule.include.scss",
+				"meta.at-rule.mixin.scss",
 				"keyword.blade"
 			],
 			"settings": {
@@ -153,7 +155,7 @@
 				"constant.numeric"
 			],
 			"settings": {
-				"foreground": "#C4BDEB"
+				"foreground": "#BACEE1"
 			}
 		},
 		{
@@ -161,7 +163,9 @@
 			"scope": [
 				"string",
 				"keyword.operator.arithmetic",
-				"keyword.operator.logical.ts",
+				"keyword.operator.logical",
+				"keyword.operator.comparison",
+				"keyword.operator.ternary",
 				"support.constant.property-value.css",
 				"support.constant.font-name.css"
 			],
@@ -200,6 +204,14 @@
 				"variable.other.enummember",
 				"support.type.property-name.css",
 				"variable.other.php",
+				"meta.jsx.children.tsx",
+				"keyword.operator.assignment",
+				"punctuation.definition.block",
+				"keyword.operator.increment",
+				"meta.brace.square",
+				"meta.brace.round",
+				"variable.scss",
+				"source.ignore",
 				"text"
 			],
 			"settings": {
@@ -209,7 +221,6 @@
 		{
 			"name": "Assignment operators and numbers",
 			"scope": [
-				"keyword.operator.assignment",
 				"keyword.other.unit.percentage.css",
 			],
 			"settings": {
@@ -231,13 +242,13 @@
 		{
 			"name": "Tag symbols </>",
 			"scope": [
-				"punctuation.definition.tag",
 				"keyword.operator.class.php",
 				"punctuation.terminator.statement",
 				"punctuation.terminator.expression",
 				"punctuation.separator",
-				"punctuation.section.embedded.begin.php",
-				"punctuation.section.embedded.end.php"
+				"punctuation.definition.typeparameters.end",
+				"punctuation.definition.typeparameters.begin",
+				"keyword.operator.type"
 			],
 			"settings": {
 				"foreground": "#939393"
