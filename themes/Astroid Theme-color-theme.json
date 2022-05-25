@@ -62,8 +62,8 @@
 		"statusBar.noFolderForeground": "#bcb28d",
 		"tab.activeBackground": "#1f2023",
 		"tab.activeForeground": "#D4CEBB",
-		"tab.inactiveBackground": "#212121",
 		"tab.activeBorderTop": "#FF668E",
+		"tab.inactiveBackground": "#252526",
 		"tab.inactiveForeground": "#bcb28d66",
 		"panel.background": "#1f2023",
 		"activityBar.background": "#1f2023",
@@ -82,6 +82,13 @@
 		"editorGutter.deletedBackground": "#ED4C76"
 	},
 	"tokenColors": [
+		{
+			"name": "Shell support",
+			"scope": "source.shell",
+			"settings": {
+				"foreground": "#D4CEBB"
+			}
+		},
 		{
 			"name": "Comment",
 			"scope": [
@@ -108,7 +115,8 @@
 				"entity.other.attribute-name.id.css",
 				"entity.other.attribute-name.class.css",
 				"keyword.other.type.php",
-				"entity.name.class"
+				"entity.name.class",
+				"keyword.operator.logical.shell"
 			],
 			"settings": {
 				"foreground": "#4EC9B0"
@@ -146,13 +154,17 @@
 			}
 		},
 		{
-			"name": "Function names",
+			"name": "Function names, numbers",
 			"scope": [
 				"entity.name.function",
 				"punctuation.decorator",
 				"variable.other.object.property",
 				"variable.other.property",
-				"constant.numeric"
+				"constant.numeric",
+				"support.function.builtin.shell",
+				"meta.scope.logical-expression.shell",
+				"keyword.other.unit.percentage.css",
+				"variable.other.bracket.shell"
 			],
 			"settings": {
 				"foreground": "#BACEE1"
@@ -212,19 +224,12 @@
 				"meta.brace.round",
 				"variable.scss",
 				"source.ignore",
+				"variable.other.normal.shell",
+				"variable.other.positional.shell",
 				"text"
 			],
 			"settings": {
 				"foreground": "#D4CEBB"
-			}
-		},
-		{
-			"name": "Assignment operators and numbers",
-			"scope": [
-				"keyword.other.unit.percentage.css",
-			],
-			"settings": {
-				"foreground": "#CBE5E0"
 			}
 		},
 		{
