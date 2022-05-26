@@ -125,7 +125,8 @@
 		{
 			"name": "Keyword control",
 			"scope": [
-				"keyword.control"
+				"keyword.control",
+				"keyword.blade"
 			],
 			"settings": {
 				"foreground": "#b18ed5"
@@ -146,8 +147,7 @@
 				"keyword.other.phpdoc.php",
 				"punctuation.definition.block.tag",
 				"meta.at-rule.include.scss",
-				"meta.at-rule.mixin.scss",
-				"keyword.blade"
+				"meta.at-rule.mixin.scss"
 			],
 			"settings": {
 				"foreground": "#569CD6",
