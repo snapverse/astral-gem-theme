@@ -7,6 +7,8 @@ export default function greeting(name: string) {
   return `Hello ${name}`;
 }
 
+const regex = /([Aa]|[Bb])/
+
 type StoreController = (request: any, response: any) => { sucess: boolean, data: any };
 
 const store: StoreController = (request, response) => {
@@ -35,15 +37,15 @@ enum MyEnum {
 console.info('hi mars!')
 const CONSTANT_VAR = 2 ?? 2
 let exponential = 2 ** 2
-var substract = 2 - 2
+var substract = 2 - 2 - 0
 const obj = {
   'foo': [1, 2, 3, 4, 5, 6],
   bar: { 'a': true, 'b': false }
 }
 
 const x = Number(obj.bar.a) + 20
-const { bar, foo } = obj
-export type T1<T> = T[] | unknown | never[] | T | string | number
+const { bar: barFoo, foo: fooBar } = obj
+export type T1<T = EpicType | null | unknown | undefined> = T[] | unknown | never[] | T | string | number | null
 
 /**
  * @param {Number} console - log print stuff
@@ -56,7 +58,7 @@ interface Greet {
 }
 
 function f() {
-  console.log("f(): eval∑uated");
+  console.log("f(): evaluated");
   return function(target, propertyKey: string, descriptor: PropertyDescriptor) {
     console.log("f(): called");
   };
@@ -85,21 +87,21 @@ abstract class GreeterSkeleton implements Greet {
       return fn(...args)
     }
 
-    static getFullName (fullName: string) {
+    public static getFullName (fullName: string) {
       return fullName
     }
 }
 
 class Greeter extends GreeterSkeleton {
-    fullName: string = `${this.name} ${this.lastName}`
+  fullName: string = `${this.name} ${this.lastName}`
 
-    constructor(name: string, lastName: string) {
-      super(['John', 'Doe'])
-    }
+  constructor(name: string, lastName: string) {
+    super(['John', 'Doe'])
+  }
 
-    async timeout(ms: number) {
-      return new Promise(resolve => {
-        setTimeout(resolve, ms)
-      })
-    }
+  async timeout(ms: number) {
+    return new Promise(resolve => {
+      setTimeout(resolve, ms)
+    })
+  }
 }
