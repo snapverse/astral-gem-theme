@@ -167,7 +167,8 @@
 				"meta.scope.logical-expression.shell",
 				"keyword.other.unit.percentage.css",
 				"variable.other.bracket.shell",
-				"variable.object.property"
+				"variable.object.property",
+				"keyword.cmake"
 			],
 			"settings": {
 				"foreground": "#ABCCEB"
@@ -228,7 +229,8 @@
 				"source.ignore",
 				"variable.other.normal.shell",
 				"variable.other.positional.shell",
-				"text"
+				"text",
+				"source.cmake"
 			],
 			"settings": {
 				"foreground": "#D4CEBB"
