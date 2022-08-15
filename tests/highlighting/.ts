@@ -59,6 +59,7 @@ interface Greet {
 
 function Decorator() {
   console.log("f(): evaluated");
+  
   return function(target, propertyKey: string, descriptor: PropertyDescriptor) {
     console.log("f(): called");
   };
