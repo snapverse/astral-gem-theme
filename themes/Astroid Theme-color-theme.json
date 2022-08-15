@@ -117,11 +117,11 @@
 				"keyword.other.type.php",
 				"entity.name.class",
 				"keyword.operator.logical.shell",
-				"support.type.builtin"
-
+				"support.type.builtin",
+				"storage.type.built-in.primitive.cpp"
 			],
 			"settings": {
-				"foreground": "#6DD6D4"
+				"foreground": "#6EBAB8"
 			}
 		},
 		{
@@ -138,10 +138,11 @@
 				"keyword.other.phpdoc.php",
 				"meta.at-rule.include.scss",
 				"meta.at-rule.mixin.scss",
-				"variable.language.super"
+				"variable.language.super",
+				"keyword.other.using.directive.cpp"
 			],
 			"settings": {
-				"foreground": "#B18ED5"
+				"foreground": "#A98AC9"
 			}
 		},
 		{
@@ -149,7 +150,8 @@
 			"scope": [
 				"constant.language.boolean",
 				"constant.language",
-				"entity.name.tag"
+				"entity.name.tag",
+				"entity.name.section.group-title.ini"
 			],
 			"settings": {
 				"foreground": "#569CD6",
@@ -167,11 +169,13 @@
 				"meta.scope.logical-expression.shell",
 				"keyword.other.unit.percentage.css",
 				"variable.other.bracket.shell",
-				"variable.object.property",
-				"keyword.cmake"
+				"keyword.cmake",
+				"keyword.operator.wordlike.cpp",
+				"keyword.operator.functionlike.cpp",
+				"keyword.other.definition.ini"
 			],
 			"settings": {
-				"foreground": "#ABCCEB"
+				"foreground": "#B4CDE6"
 			}
 		},
 		{
@@ -183,7 +187,10 @@
 				"keyword.operator.comparison",
 				"keyword.operator.ternary",
 				"support.constant.property-value.css",
-				"support.constant.font-name.css"
+				"support.constant.font-name.css",
+				"storage.modifier.reference.cpp",
+				"keyword.operator.bitwise.cpp",
+				"keyword.other.unit.suffix.floating-point.cpp"
 			],
 			"settings": {
 				"foreground": "#FF668E"
@@ -191,7 +198,10 @@
 		},
 		{
 			"name": "Strings, Logical and maths operators",
-			"scope": "string.regexp",
+			"scope": [
+				"string.regexp",
+				"constant.character.escape"
+			],
 			"settings": {
 				"foreground": "#F28673"
 			}
@@ -230,7 +240,8 @@
 				"variable.other.normal.shell",
 				"variable.other.positional.shell",
 				"text",
-				"source.cmake"
+				"source.cmake",
+				"source.ini"
 			],
 			"settings": {
 				"foreground": "#D4CEBB"
@@ -242,10 +253,16 @@
 				"entity.other.attribute-name",
 				"variable.other.constant",
 				"keyword.operator.new",
-				"support.other.namespace.php"
+				"support.other.namespace.php",
+				"entity.name.scope-resolution.cpp",
+				"variable.other.readwrite.cpp",
+				"entity.name.scope-resolution.parameter.cpp",
+				"entity.name.scope-resolution.template.call.cpp",
+				"meta.body.function.definition.cpp",
+				"variable.object.property"
 			],
 			"settings": {
-				"foreground": "#D4D1C2"
+				"foreground": "#C1BEB0"
 			}
 		},
 		{
@@ -258,10 +275,12 @@
 				"punctuation.definition.typeparameters.end",
 				"punctuation.definition.typeparameters.begin",
 				"keyword.operator.type",
-				"punctuation.definition.bracket.curly"
+				"punctuation.definition.bracket.curly",
+				"entity.name.function.operator.member.cpp",
+				"entity.name.function.operator.cpp"
 			],
 			"settings": {
-				"foreground": "#939393"
+				"foreground": "#808080"
 			}
 		}
 	]

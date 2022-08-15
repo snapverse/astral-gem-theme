@@ -57,7 +57,7 @@ interface Greet {
   sleep: (fn: () => void, ...args: unknown[]) => Promise<any>
 }
 
-function f() {
+function Decorator() {
   console.log("f(): evaluated");
   return function(target, propertyKey: string, descriptor: PropertyDescriptor) {
     console.log("f(): called");
@@ -65,7 +65,7 @@ function f() {
 }
 
 class Sample {
-  @f()
+  @Decorator()
   protected method () {
 
   }

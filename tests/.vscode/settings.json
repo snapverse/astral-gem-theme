@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.lock": "yaml",
+    ".prettierignore": "ignore",
+    ".adonisrc": "json",
+    ".prettierrc": "json",
+    ".svelte": "html",
+    ".env.development": "ini",
+    ".env": "ini",
+    "iostream": "cpp",
+    "memory": "cpp"
+  }
+}
