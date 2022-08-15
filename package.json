@@ -3,7 +3,7 @@
     "icon": "assets/logo.png",
     "displayName": "Astroid Theme",
     "description": "Astroid is a vscode theme that improves vscode's dark+ theme considerably",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "publisher": "simmxns",
     "repository": {
         "type": "git",
