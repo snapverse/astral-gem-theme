@@ -25,17 +25,17 @@
 		"terminal.ansiMagenta": "#e03c8a",
 		"terminal.ansiBrightMagenta": "#646695",
 		"terminal.foreground": "#bcb28d",
-		"terminal.background": "#1f2023",
+		"terminal.background": "#1C1C1D",
 		"terminalCursor.background": "#eee8d5",
 		"terminalCursor.foreground": "#657b83",
-		"editor.background": "#1f2023",
+		"editor.background": "#1C1C1D",
 		"editor.foreground": "#bcb28d",
 		"editor.selectionBackground": "#ED4C7630",
 		"editor.selectionHighlightBackground": "#2c5a65",
 		"editor.wordHighlightBackground": "#2c5a65",
 		"editorCursor.foreground": "#bcb28d",
-		"editorGutter.background": "#1f2023",
-		"editorHoverWidget.background": "#121620",
+		"editorGutter.background": "#1C1C1D",
+		"editorHoverWidget.background": "#151617",
 		"editorIndentGuide.background": "#2f3033",
 		"editorLineNumber.foreground": "#666",
 		"editorLink.activeForeground": "#999",
@@ -48,12 +48,13 @@
 		"editor.findMatchHighlightBackground": "#2c5a65",
 		"editor.findRangeHighlightBackground": "#2c5a65",
 		"editor.findMatchBorder": "#bcb28d66",
-		"sideBar.background": "#1f2023",
+		"editorGroupHeader.tabsBackground": "#151617",
+		"sideBar.background": "#151617",
 		"sideBar.foreground": "#D4CEBB",
-		"sideBarSectionHeader.background": "#1f2023",
+		"sideBarSectionHeader.background": "#151617",
 		"sideBarSectionHeader.foreground": "#999",
 		"sideBarTitle.foreground": "#999",
-		"statusBar.background": "#1f2023",
+		"statusBar.background": "#151617",
 		"statusBar.border": "#424852",
 		"statusBar.foreground": "#bcb28d",
 		"statusBar.debuggingBackground": "#bcb28d",
@@ -62,18 +63,18 @@
 		"statusBar.noFolderForeground": "#bcb28d",
 		"tab.activeBackground": "#1f2023",
 		"tab.activeForeground": "#D4CEBB",
-		"tab.activeBorder": "#FF668E",
-		"tab.inactiveBackground": "#252526",
-		"tab.inactiveForeground": "#bcb28d66",
-		"panel.background": "#1f2023",
-		"activityBar.background": "#1f2023",
+		"tab.activeBorderTop": "#F28773",
+		"tab.inactiveBackground": "#151617",
+		"tab.inactiveForeground": "#424852",
+		"panel.background": "#151617",
+		"activityBar.background": "#151617",
 		"activityBar.border": "#424852",
 		"activityBar.foreground": "#bcb28d",
 		"activityBarBadge.background": "#424852",
-		"titleBar.activeBackground": "#1f2023",
-		"titleBar.activeForeground": "#1f2023",
-		"titleBar.inactiveBackground": "#1f2023",
-		"titleBar.inactiveForeground": "#1f2023",
+		"titleBar.activeBackground": "#151617",
+		"titleBar.activeForeground": "#151617",
+		"titleBar.inactiveBackground": "#151617",
+		"titleBar.inactiveForeground": "#151617",
 		"gitDecoration.addedResourceForeground": "#4EC9B0",
 		"editorGutter.addedBackground": "#4EC9B0",
 		"gitDecoration.modifiedResourceForeground": "#b18ed5",
@@ -90,7 +91,7 @@
 			}
 		},
 		{
-			"name": "Comment",
+			"name": "Comments, Docs",
 			"scope": [
 				"comment",
 				"punctuation.definition.comment",
@@ -103,30 +104,12 @@
 			}
 		},
 		{
-			"name": "Types, Classes, Inheritance, CSS attrs",
+			"name": "Types, Classes, Inheritance, CSS attrs & Keyword control",
 			"scope": [
-				"support.type.primitive",
-				"entity.name.type",
-				"entity.name.type.alias",
-				"entity.name.type.instance",
-				"entity.other.inherited-class",
-				"support.class",
 				"support.type.object.module",
-				"entity.other.attribute-name.id.css",
-				"entity.other.attribute-name.class.css",
 				"keyword.other.type.php",
 				"entity.name.class",
 				"keyword.operator.logical.shell",
-				"support.type.builtin",
-				"storage.type.built-in.primitive.cpp"
-			],
-			"settings": {
-				"foreground": "#6EBAB8"
-			}
-		},
-		{
-			"name": "Keyword control",
-			"scope": [
 				"keyword.control",
 				"keyword.blade",
 				"storage.type.type",
@@ -139,10 +122,18 @@
 				"meta.at-rule.include.scss",
 				"meta.at-rule.mixin.scss",
 				"variable.language.super",
-				"keyword.other.using.directive.cpp"
+				"keyword.other.using.directive.cpp",
+				"keyword.operator.arithmetic",
+				"keyword.operator.logical",
+				"keyword.operator.comparison",
+				"keyword.operator.ternary",
+				"keyword.operator.assignment",
+				"keyword.operator.or.regexp",
+				"storage.modifier.reference.cpp",
+				"keyword.operator.bitwise.cpp"
 			],
 			"settings": {
-				"foreground": "#A98AC9"
+				"foreground": "#D2A8FF"
 			}
 		},
 		{
@@ -150,11 +141,18 @@
 			"scope": [
 				"constant.language.boolean",
 				"constant.language",
-				"entity.name.tag",
-				"entity.name.section.group-title.ini"
+				"entity.name.section.group-title.ini",
+				"constant.numeric.decimal",
+				"support.type.builtin",
+				"support.type.primitive",
+				"string.regexp",
+				"entity.other.attribute-name.id.css",
+				"entity.other.attribute-name.class.css",
+				"entity.name.tag.html",
+				"entity.name.tag.localname.xml"
 			],
 			"settings": {
-				"foreground": "#569CD6",
+				"foreground": "#80C0F5",
 			}
 		},
 		{
@@ -162,9 +160,6 @@
 			"scope": [
 				"entity.name.function",
 				"punctuation.decorator",
-				"variable.other.object.property",
-				"variable.other.property",
-				"constant.numeric",
 				"support.function.builtin.shell",
 				"meta.scope.logical-expression.shell",
 				"keyword.other.unit.percentage.css",
@@ -175,42 +170,53 @@
 				"keyword.other.definition.ini"
 			],
 			"settings": {
-				"foreground": "#B4CDE6"
+				"foreground": "#E96192"
 			}
 		},
 		{
 			"name": "Strings, Logical and maths operators",
 			"scope": [
-				"string",
-				"keyword.operator.arithmetic",
-				"keyword.operator.logical",
-				"keyword.operator.comparison",
-				"keyword.operator.ternary",
 				"support.constant.property-value.css",
 				"support.constant.font-name.css",
-				"storage.modifier.reference.cpp",
-				"keyword.operator.bitwise.cpp",
-				"keyword.other.unit.suffix.floating-point.cpp"
+				"keyword.other.unit.suffix.floating-point.cpp",
+				"entity.name.scope-resolution.cpp",
+				"variable.parameter",
+				"variable.other.object",
+				"entity.name.type.class.cpp",
+				"entity.name.scope-resolution.parameter.cpp",
+				"entity.name.type.cpp",
+				"entity.name.type.alias",
+				"entity.name.type.instance",
+				"entity.other.inherited-class",
+				"support.class",
+				"entity.name.type",
+				"entity.name.tag",
+				"string.quoted.double.html",
+				"meta.attribute.name.html"
 			],
 			"settings": {
-				"foreground": "#FF668E"
+				"foreground": "#F28773"
 			}
 		},
 		{
-			"name": "Strings, Logical and maths operators",
-			"scope": [
-				"string.regexp",
-				"constant.character.escape"
-			],
+			"name": "Strings",
+			"scope": "string",
 			"settings": {
-				"foreground": "#F28673"
+				"foreground": "#77C9BF"
+			}
+		},
+		{
+			"name": "Escaped characters",
+			"scope": "constant.character.escape",
+			"settings": {
+				"foreground": "#3A857C"
 			}
 		},
 		{
 			"name": "this",
 			"scope": "variable.language.this",
 			"settings": {
-				"foreground": "#FF668E",
+				"foreground": "#F28773",
 				"fontStyle": "italic"
 			}
 		},
@@ -218,19 +224,17 @@
 			"name": "Variables",
 			"scope": [
 				"meta.import",
-				"variable.other.object",
 				"variable.other.readwrite",
-				"variable.parameter",
 				"meta.definition.variable",
 				"support.type.property-name",
 				"meta.object-literal.key",
 				"meta.function-call",
 				"variable.other.constant.object",
+				"variable.other.constant",
 				"variable.other.enummember",
 				"support.type.property-name.css",
 				"variable.other.php",
 				"meta.jsx.children.tsx",
-				"keyword.operator.assignment",
 				"punctuation.definition.block",
 				"keyword.operator.increment",
 				"meta.brace.square",
@@ -241,7 +245,9 @@
 				"variable.other.positional.shell",
 				"text",
 				"source.cmake",
-				"source.ini"
+				"source.ini",
+				"support.variable",
+				"meta.function-call.ts"
 			],
 			"settings": {
 				"foreground": "#D4CEBB"
@@ -251,15 +257,14 @@
 			"name": "Tag attrs",
 			"scope": [
 				"entity.other.attribute-name",
-				"variable.other.constant",
 				"keyword.operator.new",
 				"support.other.namespace.php",
-				"entity.name.scope-resolution.cpp",
 				"variable.other.readwrite.cpp",
-				"entity.name.scope-resolution.parameter.cpp",
 				"entity.name.scope-resolution.template.call.cpp",
 				"meta.body.function.definition.cpp",
-				"variable.object.property"
+				"variable.object.property",
+				"variable.other.object.property",
+				"variable.other.property"
 			],
 			"settings": {
 				"foreground": "#C1BEB0"
