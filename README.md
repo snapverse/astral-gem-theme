@@ -1,5 +1,5 @@
-# Astral Gem Theme 🔒
-*A colletion of themes to chill out* 🤙
+# Astral Theme 🔒
+*A collection of themes to chill out* 🤙
 
 ### Archived ⚠️
 > I'm not using VSCode anymore as my main code editor; for that reason, I will no longer update this repo soon or in the future.
@@ -11,7 +11,7 @@
 </div>
 
 ## Inspiration 💭
-The dark+ theme of vscode is really good, I've used it throughout my programming career and to be honest, it's pretty good and has good handling of syntax highlighting, nothing to complain about. Simply I wanted to give the theme a more chill touch making it a little more yellowish so that it is good for the eyes and you can spend more time programming with a theme that does not bother your eyes too much, In addition to this, I changed some colors a little to give it a bit of my taste. That's how he gave me the incentive to create my own theme based on default visual studio code dark+ theme
+The dark+ theme of vscode is really good, I've used it throughout my programming career, and to be honest, it's pretty good and has good handling of syntax highlighting, nothing to complain about. , I wanted to give the theme a more chill touch, making it a little more yellowish so that it is good for the eyes, and you can spend more time programming with a theme that does not bother your eyes too much. In addition to this, I changed some colours a little to give it a bit of my taste. That's how he gave me the incentive to create my own theme based on the default Visual Studio Code dark+ theme
 
 ## Pallete 🎨
 
